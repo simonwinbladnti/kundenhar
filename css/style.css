@@ -14,7 +14,7 @@ body {
     color: #333;
 }
 
-.container {
+.landing-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 8% 42% 40% 10%;
@@ -34,9 +34,13 @@ header {
 
 .left-section {
     display: flex;
-    align-items: center;
 }
 
+.left-section a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
 
 .left-section img {
     height: 3rem;
@@ -49,6 +53,7 @@ header {
     letter-spacing: 2px;
     margin: 0;
 }
+
 
 .right-section {
     list-style: none;
@@ -75,7 +80,7 @@ header {
     margin-right: 5px;
 }
 
-.main-content {
+.home-content {
     grid-area: 2 / 1 / 3 / 2;
     width: 100%;
     height: 80%;
@@ -88,11 +93,11 @@ header {
     object-fit: cover;
 }
 
-.main-content img {
+.home-content img {
     height: 100%;
 }
 
-.main-content .paragraph-content {
+.home-content .paragraph-content {
     width: 100%;
     color: black;
     margin: 4rem;
@@ -102,7 +107,7 @@ header {
 }
 
 
-section {
+.home-section {
     grid-area: 3 / 1 / 4 / 2;
     display: flex;
     text-align: center;
@@ -111,19 +116,19 @@ section {
     height: 100%;
 }
 
-section h1 {
+.home-section h1 {
     margin-bottom: 10px;
     font-size: 40px;
 }
 
-section .image-container {
+.home-section .image-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
 
-section .image-container img {
+.home-section .image-container img {
     height: 40vh;
     width: 15vw;
     object-fit: cover;  
@@ -131,7 +136,7 @@ section .image-container img {
     transition: 0.5s ease;
 }
 
-section .image-container img:hover {
+.home-section .image-container img:hover {
     transform: scale(1.02);
 }
 
@@ -146,4 +151,168 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*Sida 2*/
+
+
+.browse-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8% 82% 10%;
+    min-height: 150vh;
+    max-height: 150vh;
+}
+
+.browse-header {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+}
+
+
+.main-browse {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.main-browse h1 {
+    padding: 20px;
+    text-shadow: 0 4px 2px rgba(0, 0, 0, 0.125);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #c54528 !important;
+    padding: 10px;
+}
+
+.gallery img {
+    width: 12vw;
+    height: 40vh;
+    padding: 10px;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.browse-footer {
+    grid-area: 3 / 1 / 4 / 2 !important;
+    display: grid !important;
+}
+
+
+/* Sida 3*/
+
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 8% 42% 40% 10%;
+    min-height: 150vh;
+    max-height: 150vh;
+}
+
+.about-header {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+}
+
+.contact-content {
+    grid-area: 3 / 1 / 4 / 2;
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.contact-content img {
+    height: 100%;
+}
+
+.contact-content .paragraph-content {
+    width: 100%;
+    color: black;
+    margin: 4rem;
+    font-family: 'Hedvig Letters Sans', sans-serif; 
+    font-size: 1rem;
+    
+}
+
+.paragraph-content p {
+    line-height: 40px;
+}
+
+
+.about-content {
+    grid-area: 2 / 1 / 3 / 2;
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.about-content img {
+    height: 100%;
+}
+
+.about-content .paragraph-content2 {
+    width: 100%;
+    color: black;
+    margin: 4rem;
+    font-family: 'Hedvig Letters Sans', sans-serif; 
+    font-size: 1rem;
+    line-height: 40px;
+}
+
+.about-content button {
+    background-color: #ff5733;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: none;
+    transition: 0.5s ease;
+}
+
+.about-content button:hover {
+    transform: scale(1.01);
+}
+
+
+.about-footer {
+    grid-area: 4 / 1 / 5 / 2;
+    display: grid;
 }
